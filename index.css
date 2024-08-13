@@ -9,10 +9,13 @@ body {
     padding:0;
     margin: 0;
     font-family: 'Varela Round', sans-serif;
+    text-align: center;
     
     
     
 }
+
+/* 
 .header {
     display: flex;
     flex-direction: row;
@@ -29,6 +32,24 @@ body {
     color: white;
     text-align: center;
 padding-left: 470px;
+ */
+
+
+header{
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding-top: 3%;
+   display: flex;
+   justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding-left: 470px;
+    }
+
+
 }
 
 .container{
@@ -82,19 +103,42 @@ margin-bottom: 10px;
 }
 
 .logo-position{
-   
-    padding-left: 20px;
-    padding-top: 18px;
-    
-    
+    width: 40px;
+    height: auto;
+    padding-top: 13px;
 }
+ .shop-name{
+    margin-right: 10px;
 
-.image-carousel{
+ }
+
+/* .image-carousel{
     text-align: center;
 
     padding-top: 50px;
     padding-bottom: 100px;
+}1
+ */
+ .image-carousel {
+    text-align: center;
+    padding: 50px 0;
 }
+
+.image-carousel img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .image-carousel img {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+    .image-carousel button {
+        width: 100px; /* Make buttons smaller */
+    }
+}
+
 
 button{
     background-color: #000000; 
@@ -120,5 +164,16 @@ button{
     font-weight: bold;
     color:rgb(0, 0, 0);
     text-align: center;
-    padding-top: 200px ;
+    padding-top: 50px ;
+}
+
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+ol{
+  list-style-position: inside;
+  padding-left: 0;
+  
 }
